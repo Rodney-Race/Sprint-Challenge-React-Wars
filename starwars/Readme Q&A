@@ -1,0 +1,18 @@
+1. What is React JS and what problems does it try and solve? 
+It is a versatile JavaScript framework. It can be added to various other libraries like Web pack and its plug-ins, React Native, 
+Flux, Reflux etc. that makes using React.JS worth it. React with Web pack is a remarkable developer-friendly combination which is a 
+full-stop solution for all browser related needs.
+
+2. What does it mean to think in react? 
+Think in react means to think of how react is run and what it produces.
+
+3. Describe state.
+state is an object that represents the parts of the app that can change. Each component can maintain its own state, which lives in an object called this.state 
+
+4. Describe props.
+Props are a parent component level "variable", it is passed to the child to trigger changed in the parent component
+
+5. What are side effects, and how do you sync effects in a React component to state or prop changes?
+Side effect happens after react updates the DOM, on every render. You useState() to set state from within useEffect(). When you use props they will automatically 
+sync with useState() for an example useEffect(() => { setSomeState(props) }, [props]) whenever props get changed it will set the state inside useEffect, and after 
+the DOM is already rendered (prevents infinite loops)
